@@ -43,14 +43,29 @@ Koki Sato {.!mt-2}
 </div>
 
 ---
+class: flex flex-col items-center
+---
 
 <Header :page="$page" />
 
-# ページ 1
+# Q.「IT エンジニアが使うべき IME は？」
 
-- あああ
-- いいい
-- ううう
+---
+class: mt-24
+---
+
+Q.「IT エンジニアが使うべき IME は？」 {.text-center.font-bold}
+
+<div class="flex flex-col items-center">
+
+<ol>
+  <li class="w-fit" v-click="1" v-mark="{ at: 4, type: 'strike-through' }">標準 IME</li>
+  <li class="w-fit" v-click="2" v-mark="{ at: 4, type: 'strike-through' }">Google 日本語入力</li>
+  <li class="w-fit" v-click="3" v-mark="{ at: 4, type: 'strike-through' }">その他サードパーティ製 IME</li>
+  <li class="w-fit font-bold !text-4xl" v-click="4" v-mark="{ at: 4, type: 'underline', color: 'red' }">自作 IME</li>
+</ol>
+
+</div>
 
 ---
 level: 2

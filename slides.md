@@ -43,14 +43,6 @@ Koki Sato {.!mt-2}
 </div>
 
 ---
-hideInToc: true
----
-
-# アジェンダ
-
-<Toc />
-
----
 
 <Header :page="$page" />
 

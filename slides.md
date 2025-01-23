@@ -46,7 +46,10 @@ Koki Sato {.!mt-2}
 
 # IME とは？
 
-TODO
+- Input Method Editor (Input Method)
+- TODO: IME についての説明
+- IME がなければ Hello World プログラムを書くことさえ難しい
+- 我々 IT エンジニアは IME によって生かされている
 
 ---
 class: flex flex-col items-center justify-center

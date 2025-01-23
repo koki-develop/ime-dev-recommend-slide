@@ -43,29 +43,48 @@ Koki Sato {.!mt-2}
 </div>
 
 ---
-class: flex flex-col items-center
----
 
-<Header :page="$page" />
+# IME とは？
 
-# Q.「IT エンジニアが使うべき IME は？」
+TODO
 
 ---
-class: mt-24
+class: flex flex-col items-center justify-center
 ---
 
-Q.「IT エンジニアが使うべき IME は？」 {.text-center.font-bold}
+<h1 class="question" v-click="0">
+Q.「IT エンジニアが使うべき IME は？」
+</h1>
 
 <div class="flex flex-col items-center">
 
 <ol>
-  <li class="w-fit" v-click="1" v-mark="{ at: 4, type: 'strike-through' }">標準 IME</li>
-  <li class="w-fit" v-click="2" v-mark="{ at: 4, type: 'strike-through' }">Google 日本語入力</li>
-  <li class="w-fit" v-click="3" v-mark="{ at: 4, type: 'strike-through' }">その他サードパーティ製 IME</li>
-  <li class="w-fit font-bold !text-4xl" v-click="4" v-mark="{ at: 4, type: 'underline', color: 'red' }">自作 IME</li>
+  <li class="option w-fit" v-click="2">標準 IME</li>
+  <li class="option w-fit" v-click="2">Google 日本語入力</li>
+  <li class="option w-fit" v-click="2">その他サードパーティ製 IME</li>
+  <li class="option w-fit font-bold !text-4xl" v-click="3" v-mark="{ at: 3, type: 'underline', color: 'red' }">自作 IME</li>
 </ol>
 
 </div>
+
+<style>
+h1.question {
+    @apply text-center absolute whitespace-nowrap transition-all duration-300;
+}
+h1.question.slidev-vclick-current {
+    @apply top-1/3 left-1/2 -translate-y-1/2 -translate-x-1/2 text-4xl !mb-0;
+}
+h1.question.slidev-vclick-prior {
+    @apply -top-1/4 left-1/2 -translate-y-1/2 -translate-x-1/2 text-2xl;
+}
+li.option.slidev-vclick-prior {
+  @apply opacity-50;
+}
+</style>
+
+---
+
+hogefuga
 
 ---
 layout: new-section

@@ -1,6 +1,6 @@
 ---
 theme: penguin
-title: Slidev Template
+title: 自作 IME のすすめ
 drawings:
   persist: false
 mdc: true
@@ -12,7 +12,7 @@ hideInToc: true
 
 # {{ $slidev.configs.title }}
 
-Presentation slides for developers
+2024.01.31
 
 ---
 layout: presenter
@@ -24,8 +24,10 @@ hideInToc: true
 
 Koki Sato {.!mt-2}
 
-Classi 株式会社  
-学習 PMF 部ソフトウェアエンジニア
+- 27 歳
+- 平成 10 年 **1 月 31 日**生まれ
+- 誕生日は **1 月 31 日**
+- 生年月日は 1998 年 **1 月 31 日**
 
 <div class="flex flex-col gap-2 mt-4">
 <span>

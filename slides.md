@@ -65,7 +65,7 @@ class: flex flex-col items-center justify-center
 
 機械翻訳 :
 
-> IME (入力方式エディター) は、標準キーボード (US-101 キーボードなど) を使用して、キーボード自体に直接表示されていない文字や記号を入力できるようにするアプリケーション。
+> IME (input-method editor) は、標準キーボード (US-101 キーボードなど) を使用して、キーボード自体に直接表示されていない文字や記号を入力できるようにするアプリケーション。
 
 ---
 
@@ -79,7 +79,7 @@ class: flex flex-col items-center justify-center
 
 機械翻訳 :
 
-> 入力方式エディター (IME) は、標準の QWERTY キーボードでは簡単に表現できない言語でテキストを入力できるようにするソフトウェアコンポーネントです。
+> Input Method Editor (IME) は、標準の QWERTY キーボードでは簡単に表現できない言語でテキストを入力できるようにするソフトウェアコンポーネントです。
 
 ---
 
@@ -191,7 +191,7 @@ class: flex flex-col items-center justify-center
 - etc.
 
 <p class="!text-3xl text-center font-bold !mt-8">
-まさに日本語 IME 開発のためののオールインワンライブラリ
+まさに日本語 IME 開発のためのオールインワンライブラリ
 </p>
 
 ---
@@ -278,11 +278,16 @@ class: flex flex-col items-center justify-center
 - [InputController.swift](https://github.com/koki-develop/NyaIME/blob/main/NyaIME/Sources/NyaIMEInputController.swift) を見ると Mac 向け IME 開発の雰囲気がわかるかも
 
 ---
+class: flex flex-col items-center justify-center
+---
 
-# まとめ
+<div class="flex flex-col items-center justify-center">
+<h1 class="!mb-0 !-mt-16 !text-3xl">まとめ</h1>
 
-- IME は与えられるものではなく、自ら作るものである
-
+<p v-click class="!mb-0 text-center font-bold !text-4xl">
+IME とは他者から与えられるものではなく、<br/>自ら作るものである
+</p>
+</div>
 ---
 
 # おまけ

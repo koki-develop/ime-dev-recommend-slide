@@ -1,12 +1,3 @@
-To start the slide show:
+Classi エンジニア LT 会の発表資料。
 
-```console
-$ pnpm install
-$ pnpm run dev
-```
-
-To deploy to GitHub Pages:
-
-```console
-$ gh workflow run deploy.yml
-```
+- [自作 IME のすすめ](https://koki-develop.github.io/ime-dev-recommend-slide/)

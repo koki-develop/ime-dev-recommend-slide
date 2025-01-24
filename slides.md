@@ -278,16 +278,12 @@ class: flex flex-col items-center justify-center
 - [InputController.swift](https://github.com/koki-develop/NyaIME/blob/main/NyaIME/Sources/NyaIMEInputController.swift) を見ると Mac 向け IME 開発の雰囲気がわかるかも
 
 ---
-class: flex flex-col items-center justify-center
----
 
-<div class="flex flex-col items-center justify-center">
-<h1 class="!mb-0 !-mt-16 !text-3xl">まとめ</h1>
+# まとめ
 
-<p v-click class="!mb-0 text-center font-bold !text-4xl">
-IME とは他者から与えられるものではなく、<br/>自ら作るものである
-</p>
-</div>
+- IME 作りましょう
+- 日頃からお世話になっている IME に感謝の気持ちを伝えましょう
+
 ---
 
 # おまけ

@@ -48,13 +48,65 @@ Koki Sato {.!my-0}
 </div>
 
 ---
+class: flex flex-col items-center justify-center
+---
 
 # IME とは？
 
-- Input Method Editor (Input Method)
-- TODO: IME についての説明
-- IME がなければ Hello World プログラムを書くことさえ難しい
-- 我々 IT エンジニアは IME によって生かされている
+---
+
+# IME とは？
+
+[Input Method Editor API - W3C](https://www.w3.org/TR/ime-api/#background)
+
+> An _IME_ (input-method editor) is an application that allows a standard keyboard (such as a US-101 keyboard) to be used to type characters and symbols that are not directly represented on the keyboard itself.
+
+<br/>
+
+機械翻訳 :
+
+> IME (入力方式エディター) は、標準キーボード (US-101 キーボードなど) を使用して、キーボード自体に直接表示されていない文字や記号を入力できるようにするアプリケーション。
+
+---
+
+# IME とは？
+
+[Input Method Editors (IME) - Microsoft Learn](https://learn.microsoft.com/en-us/windows/apps/design/input/input-method-editors)
+
+> An Input Method Editor (IME) is a software component that enables a user to input text in a language that can't be represented easily on a standard QWERTY keyboard.
+
+<br/>
+
+機械翻訳 :
+
+> 入力方式エディター (IME) は、標準の QWERTY キーボードでは簡単に表現できない言語でテキストを入力できるようにするソフトウェアコンポーネントです。
+
+---
+
+# IME とは？
+
+要するに
+
+- キーボードで入力した文字列をいい感じに変換してくれるやつ
+- IME がなければ我々はまともに日本語を入力することすら難しい
+
+<p v-click class="!mt-16 !mb-0 text-center !text-2xl">
+つまり
+</p>
+
+<p v-click class="!my-0 text-center font-bold !text-3xl">
+我々は IME によって生かされている
+</p>
+
+---
+
+# ちなみに
+
+- 「IME」は元々 Windows で使用されていた固有の用語
+  - 他のプラットフォームでは「IM (Input Method)」と呼ぶことが多い[^1]
+  - この資料内ではこれらを総称して「IME」と記載することとする
+
+[^1]: 参考 : 「[インプット メソッド エディタ - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%97%E3%83%83%E3%83%88_%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89_%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF)」
 
 ---
 class: flex flex-col items-center justify-center
@@ -94,21 +146,30 @@ li.option.slidev-vclick-prior {
 
 # 自作 IME を使うメリット
 
-- 欲しい機能を思うがままに実装できる
-- 何か不具合や不満があってもすぐに修正できる
-- Zero Configuration で常に自分に最適化された IME を使用できる
+- **欲しい機能を好きなだけ搭載**できる
+- 何か不具合や不満があっても**自分ですぐに修正できる**
+- **常に自分のために最適化された IME** を利用できる
 
 ---
 
-# IME 開発って難しそう？
+<h1 class="!mb-0">IME 開発って難しそう？</h1>
 
-TODO
+<p class="!mt-1">
+<small>※これ以降は Mac 向け IME の開発を想定した話になります</small>
+</p>
 
 - ひらがな → 漢字への変換
 - 辞書データの用意
 - 変換学習
 - etc.
-- これ以降は Mac 向け IME の開発を想定した話
+
+どうやって実現すればいいの？
+
+---
+class: flex flex-col items-center justify-center
+---
+
+# AzookeyKanaKanjiConverter
 
 ---
 
@@ -129,9 +190,20 @@ TODO
 - ニューラルかな漢字変換システム「Zenzai」による漢字変換
 - etc.
 
+<p class="!text-3xl text-center font-bold !mt-8">
+まさに日本語 IME 開発のためののオールインワンライブラリ
+</p>
+
 ---
 
-# AzookeyKanaKanjiConverter
+<h1 class="!mb-2">AzookeyKanaKanjiConverter</h1>
+
+<div class="flex items-center gap-2 !mb-6">
+  <a class="!text-base" href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter" target="_blank" rel="noopener">
+    <carbon-logo-github />
+    ensan-hcl/AzooKeyKanaKanjiConverter
+  </a>
+</div>
 
 ```swift {*|1,2|4,5|7,8,10,11|13,14,16,17,18|*}{}
 // デフォルト辞書つきの変換モジュールをインポート
@@ -168,7 +240,7 @@ class: flex flex-col items-center justify-center
 
 ---
 
-# IME 開発入門するときに参考にした資料
+# Mac 向け IME 開発入門するときに参考にした資料
 
 - [日本語入力を作るときに必要だった本 - BOOTH](https://booth.pm/ja/items/809262)
 - [Miwa さんの Zenn 記事](https://zenn.dev/en3_hcl)
@@ -177,12 +249,33 @@ class: flex flex-col items-center justify-center
 
 # 参考になりそうなプロジェクト
 
-- Azookey Desktop - (Swift) https://github.com/ensan-hcl/azooKey-Desktop
-- EmojiIM - (Swift) https://github.com/mzp/EmojiIM
-- Koto - (Swift) https://github.com/koki-develop/Koto
-- NyaIME - (Swift) https://github.com/koki-develop/NyaIME
-- TypoIME - (Rust) https://github.com/toshi-pono/TypoIME
-- GyaimMotion - (Ruby) https://github.com/masui/GyaimMotion
+<h2 class="!mb-2"><a href="https://github.com/ensan-hcl/azooKey-Desktop" target="_blank" rel="noopener">ensan-hcl/azooKey-Desktop</a></h2>
+
+- AzookeyKanaKanjiConverter の開発者である Miwa さんが作った IME
+- 元々開発されていた iOS のキーボードアプリ「[azooKey](https://github.com/ensan-hcl/azooKey)」の Mac 版
+
+<br/>
+
+<h2 class="!mb-2"><a href="https://github.com/mzp/EmojiIM" target="_blank" rel="noopener">mzp/EmojiIM</a></h2>
+
+- 絵文字入力の IME
+- 「[日本語入力を作るときに必要だった本](https://booth.pm/ja/items/809262)」の題材
+
+---
+
+# 参考になりそうなプロジェクト
+
+<h2 class="!mb-2"><a href="https://github.com/koki-develop/Koto" target="_blank" rel="noopener">koki-develop/Koto</a></h2>
+
+- koki が普段メインで使用している日本語 IME
+- 内部的には AzookeyKanaKanjiConverter を使用している
+
+<br/>
+
+<h2 class="!mb-2"><a href="https://github.com/koki-develop/NyaIME" target="_blank" rel="noopener">koki-develop/NyaIME</a></h2>
+
+- 猫のための IME
+- [InputController.swift](https://github.com/koki-develop/NyaIME/blob/main/NyaIME/Sources/NyaIMEInputController.swift) を見ると Mac 向け IME 開発の雰囲気がわかるかも
 
 ---
 

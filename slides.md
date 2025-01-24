@@ -288,10 +288,8 @@ class: flex flex-col items-center justify-center
 
 # おまけ
 
-TODO
-
-- スライドの URL / GitHub リポジトリ
-- Slidev の紹介
+- この発表資料は [Slidev](https://sli.dev/) で作成して GitHub Pages でホスティングしています
+- ソースコードは [koki-develop/ime-dev-recommend-slide](https://github.com/koki-develop/ime-dev-recommend-slide) で公開しています
 
 ---
 layout: new-section

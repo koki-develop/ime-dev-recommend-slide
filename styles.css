@@ -23,6 +23,10 @@
   }
 }
 
+.slidev-layout .slidev-code-wrapper {
+  @apply !max-w-full;
+}
+
 img[src="https://koki.me/profile.png"]
 {
   background-color: white;

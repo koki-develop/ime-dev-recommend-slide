@@ -83,11 +83,73 @@ h1.question.slidev-vclick-prior {
 li.option.slidev-vclick-prior {
   @apply opacity-50;
 }
-</style>
+</stylef
 
 ---
 
-hogefuga
+# 自作 IME を使うメリット
+
+- 欲しい機能を思うがままに実装できる
+- 何か不具合や不満があってもすぐに修正できる
+- Zero Configuration で常に自分に最適化された IME を使用できる
+
+---
+
+# IME 開発って難しそう？
+
+TODO
+
+- ひらがな → 漢字への変換
+- 辞書データの用意
+- 変換学習
+- etc.
+- これ以降は Mac 向け IME の開発を想定した話
+
+---
+
+# 最低限のサンプルコード
+
+TODO
+
+---
+
+# AzookeyKanaKanjiConverter
+
+TODO
+
+- https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter
+- ローマ字 → ひらがなへの変換
+- ひらがな → 漢字への変換
+- 日本語・英語の予測変換
+- 変換学習
+- ユーザー辞書
+- ニューラルかな漢字変換システム「Zenzai」による漢字変換
+- etc.
+- サンプルコード
+
+---
+
+# IME 開発入門するときに参考にした資料
+
+- https://booth.pm/ja/items/809262
+- https://zenn.dev/en3_hcl
+
+---
+
+# 参考になりそうなプロジェクト
+
+- Azookey Desktop - (Swift) https://github.com/ensan-hcl/azooKey-Desktop
+- EmojiIM - (Swift) https://github.com/mzp/EmojiIM
+- Koto - (Swift) https://github.com/koki-develop/Koto
+- NyaIME - (Swift) https://github.com/koki-develop/NyaIME
+- TypoIME - (Rust) https://github.com/toshi-pono/TypoIME
+- GyaimMotion - (Ruby) https://github.com/masui/GyaimMotion
+
+---
+
+# まとめ
+
+TODO
 
 ---
 layout: new-section

@@ -12,7 +12,8 @@ hideInToc: true
 
 # {{ $slidev.configs.title }}
 
-2024.01.31
+Classi エンジニア LT 会  
+<small>2025.01.31</small>
 
 ---
 layout: presenter
@@ -22,7 +23,11 @@ hideInToc: true
 
 # 佐藤光輝 {.!mb-0}
 
-Koki Sato {.!mt-2}
+Koki Sato {.!my-0}
+
+<p class="!mt-1 text-gray-500">
+<small>学習 PMF 部 / kobito チーム所属</small>
+</p>
 
 - 27 歳
 - 平成 10 年 **1 月 31 日**生まれ
@@ -83,7 +88,7 @@ h1.question.slidev-vclick-prior {
 li.option.slidev-vclick-prior {
   @apply opacity-50;
 }
-</stylef
+</style>
 
 ---
 
@@ -107,17 +112,15 @@ TODO
 
 ---
 
-# 最低限のサンプルコード
+<h1 class="!mb-2">AzookeyKanaKanjiConverter</h1>
 
-TODO
+<div class="flex items-center gap-2 !mb-6">
+  <a class="!text-base" href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter" target="_blank" rel="noopener">
+    <carbon-logo-github />
+    ensan-hcl/AzooKeyKanaKanjiConverter
+  </a>
+</div>
 
----
-
-# AzookeyKanaKanjiConverter
-
-TODO
-
-- https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter
 - ローマ字 → ひらがなへの変換
 - ひらがな → 漢字への変換
 - 日本語・英語の予測変換
@@ -125,14 +128,50 @@ TODO
 - ユーザー辞書
 - ニューラルかな漢字変換システム「Zenzai」による漢字変換
 - etc.
-- サンプルコード
+
+---
+
+# AzookeyKanaKanjiConverter
+
+```swift {*|1,2|4,5|7,8,10,11|13,14,16,17,18|*}{}
+// デフォルト辞書つきの変換モジュールをインポート
+import KanaKanjiConverterModuleWithDefaultDictionary
+
+// 変換器を初期化
+let converter = KanaKanjiConverter()
+
+// 入力を初期化
+var text = ComposingText()
+
+// 変換したい文字を追加
+text.insertAtCursorPosition("あいえむいーはせかいをすくう", inputStyle: .direct)
+
+// オプションを指定して変換
+let results = converter.requestCandidates(text, options: .withDefaultDictionary(/* ... */))
+
+// `mainResults` には変換候補の一覧が入っている
+print(results.mainResults.first!.text)
+// => IMEは世界を救う
+```
+
+<div class="flex justify-end">
+<a class="!text-base" href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter#readme" target="_blank" rel="noopener">
+  参考 : README.md
+</a>
+</div>
+
+---
+class: flex flex-col items-center justify-center
+---
+
+# 簡単！
 
 ---
 
 # IME 開発入門するときに参考にした資料
 
-- https://booth.pm/ja/items/809262
-- https://zenn.dev/en3_hcl
+- [日本語入力を作るときに必要だった本 - BOOTH](https://booth.pm/ja/items/809262)
+- [Miwa さんの Zenn 記事](https://zenn.dev/en3_hcl)
 
 ---
 
@@ -149,7 +188,16 @@ TODO
 
 # まとめ
 
+- IME は与えられるものではなく、自ら作るものである
+
+---
+
+# おまけ
+
 TODO
+
+- スライドの URL / GitHub リポジトリ
+- Slidev の紹介
 
 ---
 layout: new-section

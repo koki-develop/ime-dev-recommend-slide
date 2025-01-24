@@ -191,7 +191,7 @@ class: flex flex-col items-center justify-center
 - etc.
 
 <p class="!text-3xl text-center font-bold !mt-8">
-まさに日本語 IME 開発のためのオールインワンライブラリ
+まさに日本語 IME 開発のためのオールインワンパッケージ
 </p>
 
 ---
@@ -268,7 +268,7 @@ class: flex flex-col items-center justify-center
 <h2 class="!mb-2"><a href="https://github.com/koki-develop/Koto" target="_blank" rel="noopener">koki-develop/Koto</a></h2>
 
 - koki が普段メインで使用している日本語 IME
-- 内部的には AzookeyKanaKanjiConverter を使用している
+- 内部的に AzookeyKanaKanjiConverter を使用している
 
 <br/>
 

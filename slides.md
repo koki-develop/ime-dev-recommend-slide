@@ -90,7 +90,7 @@ class: flex flex-col items-center justify-center
 - キーボードで入力した文字列をいい感じに変換してくれるやつ
 - IME がなければ我々はまともに日本語を入力することすら難しい
 
-<p v-click class="!mt-16 !mb-0 text-center !text-2xl">
+<p v-click class="!mt-12 !mb-0 text-center !text-2xl">
 つまり
 </p>
 
@@ -102,8 +102,8 @@ class: flex flex-col items-center justify-center
 
 # ちなみに
 
-- 「IME」は元々 Windows で使用されていた固有の用語
-  - 他のプラットフォームでは「IM (Input Method)」と呼ぶことが多い[^1]
+- 「**IME**」は元々 Windows で使用されていた**固有の用語**
+  - 他のプラットフォームでは「**IM** (**Input Method**)」と呼ぶことが多い[^1]
   - この資料内ではこれらを総称して「IME」と記載することとする
 
 [^1]: 参考 : 「[インプット メソッド エディタ - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%97%E3%83%83%E3%83%88_%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89_%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF)」
@@ -155,7 +155,7 @@ li.option.slidev-vclick-prior {
 <h1 class="!mb-0">IME 開発って難しそう？</h1>
 
 <p class="!mt-1">
-<small>※これ以降は Mac 向け IME の開発を想定した話になります</small>
+<small>※これ以降は Swift を用いた Mac 向け IME の開発を想定した話になります</small>
 </p>
 
 - ひらがな → 漢字への変換
@@ -233,17 +233,11 @@ print(results.mainResults.first!.text)
 </div>
 
 ---
-class: flex flex-col items-center justify-center
----
-
-# 簡単！
-
----
 
 # Mac 向け IME 開発入門するときに参考にした資料
 
-- [日本語入力を作るときに必要だった本 - BOOTH](https://booth.pm/ja/items/809262)
 - [Miwa さんの Zenn 記事](https://zenn.dev/en3_hcl)
+- [日本語入力を作るときに必要だった本 - BOOTH](https://booth.pm/ja/items/809262)
 
 ---
 
@@ -297,3 +291,4 @@ hideInToc: true
 ---
 
 # ご清聴ありがとうございました
+

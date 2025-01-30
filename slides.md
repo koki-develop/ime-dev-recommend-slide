@@ -275,7 +275,7 @@ print(results.mainResults.first!.text)
 
 # まとめ
 
-- IME 作りましょう
+- IME を作りましょう
 - 日頃からお世話になっている IME に感謝の気持ちを伝えましょう
 
 ---

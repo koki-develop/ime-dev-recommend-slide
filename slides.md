@@ -234,7 +234,7 @@ print(results.mainResults.first!.text)
 
 ---
 
-# Mac 向け IME 開発入門するときに参考にした資料
+# Mac 向け IME 開発に入門するときに参考にした資料
 
 - [Miwa さんの Zenn 記事](https://zenn.dev/en3_hcl)
 - [日本語入力を作るときに必要だった本 - BOOTH](https://booth.pm/ja/items/809262)

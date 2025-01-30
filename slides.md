@@ -268,7 +268,7 @@ print(results.mainResults.first!.text)
 
 <h2 class="!mb-2"><a href="https://github.com/koki-develop/NyaIME" target="_blank" rel="noopener">koki-develop/NyaIME</a></h2>
 
-- 猫のための IME
+- 猫の IME
 - [InputController.swift](https://github.com/koki-develop/NyaIME/blob/main/NyaIME/Sources/NyaIMEInputController.swift) を見ると Mac 向け IME 開発の雰囲気がわかるかも
 
 ---

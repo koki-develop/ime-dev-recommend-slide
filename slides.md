@@ -169,11 +169,11 @@ li.option.slidev-vclick-prior {
 class: flex flex-col items-center justify-center
 ---
 
-# AzookeyKanaKanjiConverter
+# AzooKeyKanaKanjiConverter
 
 ---
 
-<h1 class="!mb-2">AzookeyKanaKanjiConverter</h1>
+<h1 class="!mb-2">AzooKeyKanaKanjiConverter</h1>
 
 <div class="flex items-center gap-2 !mb-6">
   <a class="!text-base" href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter" target="_blank" rel="noopener">
@@ -196,7 +196,7 @@ class: flex flex-col items-center justify-center
 
 ---
 
-<h1 class="!mb-2">AzookeyKanaKanjiConverter</h1>
+<h1 class="!mb-2">AzooKeyKanaKanjiConverter</h1>
 
 <div class="flex items-center gap-2 !mb-6">
   <a class="!text-base" href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter" target="_blank" rel="noopener">
@@ -245,7 +245,7 @@ print(results.mainResults.first!.text)
 
 <h2 class="!mb-2"><a href="https://github.com/ensan-hcl/azooKey-Desktop" target="_blank" rel="noopener">ensan-hcl/azooKey-Desktop</a></h2>
 
-- AzookeyKanaKanjiConverter の開発者である Miwa さんが作った IME
+- AzooKeyKanaKanjiConverter の開発者である Miwa さんが作った IME
 - 元々開発されていた iOS のキーボードアプリ「[azooKey](https://github.com/ensan-hcl/azooKey)」の Mac 版
 
 <br/>
@@ -262,7 +262,7 @@ print(results.mainResults.first!.text)
 <h2 class="!mb-2"><a href="https://github.com/koki-develop/Koto" target="_blank" rel="noopener">koki-develop/Koto</a></h2>
 
 - 僕が普段メインで使用している日本語 IME
-- 内部的に AzookeyKanaKanjiConverter を使用している
+- 内部的に AzooKeyKanaKanjiConverter を使用している
 
 <br/>
 
